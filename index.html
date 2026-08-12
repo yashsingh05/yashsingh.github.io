@@ -3,26 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yash Singh — Data Analyst · BI & Data Engineering</title>
-<meta name="description" content="Yash Singh — Data Analyst turning messy data into decisions. BI dashboards, ETL pipelines, predictive modeling. Syracuse, NY.">
+<title>Yash Singh — Financial Analyst · FP&amp;A &amp; Data Analytics</title>
+<meta name="description" content="Yash Singh — Financial Analyst & FP&A professional turning numbers into decisions. Financial modeling, forecasting, BI dashboards. Syracuse, NY.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F4F2EC;      /* warm paper base */
-  --ink:#131B21;
-  --slate:#55636E;
-  --card:#FFFFFF;
-  --petrol:#0E5A5E;
-  --glow:#31B5A5;
-  --amber:#E8A33D;
-  --line:#DAD5C9;
-  --dark:#0C1418;
-  --mist:#8FA6B8;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --sans:'IBM Plex Sans',system-ui,sans-serif;
-  --display:'Archivo',system-ui,sans-serif;
+--paper:#F4F2EC; /* warm paper base */
+--ink:#131B21;
+--slate:#55636E;
+--card:#FFFFFF;
+--petrol:#0E5A5E;
+--glow:#31B5A5;
+--amber:#E8A33D;
+--line:#DAD5C9;
+--dark:#0C1418;
+--mist:#8FA6B8;
+--mono:'IBM Plex Mono',ui-monospace,monospace;
+--sans:'IBM Plex Sans',system-ui,sans-serif;
+--display:'Archivo',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -64,7 +64,7 @@ nav a.cta:hover{background:#4FD8C6}
 
 /* marquee */
 .marquee{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:14px 0;overflow:hidden;white-space:nowrap;background:var(--paper)}
-.marquee-track{display:inline-block;animation:scroll 26s linear infinite}
+.marquee-track{display:inline-block;animation:scroll 36s linear infinite}
 .marquee span{font-family:var(--display);font-weight:800;font-stretch:110%;font-size:clamp(18px,2.6vw,26px);text-transform:uppercase;letter-spacing:.02em;margin:0 8px}
 .marquee em{font-style:normal;color:var(--amber);margin:0 8px}
 @keyframes scroll{to{transform:translateX(-50%)}}
@@ -90,6 +90,7 @@ nav a.cta:hover{background:#4FD8C6}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .story-grid p{margin-bottom:18px;color:var(--mist)}
 .story-grid p b{color:#fff;font-weight:600}
+
 .mile{border-left:2px solid #22343F;padding:2px 0 26px 24px;position:relative}
 .mile::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--glow)}
 .mile:last-child{padding-bottom:0}
@@ -115,176 +116,199 @@ nav a.cta:hover{background:#4FD8C6}
 /* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
+
 @media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .reveal{opacity:1;transform:none;transition:none}
-  .giant .row span{transform:none;animation:none}
-  .marquee-track{animation:none}
-  .howdy .dot{animation:none}
-  .work:hover{transform:none}
-  .mega:hover{transform:none}
+html{scroll-behavior:auto}
+.reveal{opacity:1;transform:none;transition:none}
+.giant .row span{transform:none;animation:none}
+.marquee-track{animation:none}
+.howdy .dot{animation:none}
+.work:hover{transform:none}
+.mega:hover{transform:none}
 }
+
 @media (max-width:860px){
-  nav{width:calc(100% - 24px);justify-content:center;flex-wrap:wrap}
-  nav a{padding:7px 11px;font-size:12px}
-  .work{grid-template-columns:1fr}
-  .work::before{justify-content:flex-start;padding:22px 0 0 28px}
-  .work-body{padding:10px 28px 30px}
-  .story-grid{grid-template-columns:1fr}
-  #story{margin:0;border-radius:0}
+nav{width:calc(100% - 24px);justify-content:center;flex-wrap:wrap}
+nav a{padding:7px 11px;font-size:12px}
+.work{grid-template-columns:1fr}
+.work::before{justify-content:flex-start;padding:22px 0 0 28px}
+.work-body{padding:10px 28px 30px}
+.story-grid{grid-template-columns:1fr}
+#story{margin:0;border-radius:0}
 }
+
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 
 <nav aria-label="Main">
-  <a href="#work">Work</a>
-  <a href="#story">Story</a>
-  <a href="#stack">Stack</a>
-  <a href="#connect">Connect</a>
-  <!-- Resume PDF must sit next to this file in the repo root -->
-  <a class="cta" href="Yash_Singh_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+<a href="#work">Work</a>
+<a href="#story">Story</a>
+<a href="#stack">Stack</a>
+<a href="#connect">Connect</a>
+<!-- Resume PDF must sit next to this file in the repo root -->
+<a class="cta" href="Yash_Singh_Resume.pdf" target="_blank" rel="noopener">Resume</a>
 </nav>
 
 <header class="hero">
-  <div class="wrap">
-    <p class="howdy"><span class="dot" aria-hidden="true"></span>Howdy — open to Data / BI / Analytics Engineer roles · Syracuse, NY</p>
-    <h1 class="giant" aria-label="Yash Singh">
-      <span class="row"><span>Yash</span></span>
-      <span class="row"><span>Singh</span></span>
-    </h1>
-    <p class="sub">I turn messy data into <b>decisions people trust</b> — BI dashboards, ETL pipelines, and predictive models across fintech, insurance, real estate, and e-commerce. MS in Information Systems, Syracuse University.</p>
-    <div class="hero-cta">
-      <a class="pill dark" href="#work">See the work ↓</a>
-      <a class="pill light" href="https://github.com/yashsingh05/" target="_blank" rel="noopener">GitHub</a>
-      <a class="pill light" href="https://www.linkedin.com/in/yashsingh02/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
+<div class="wrap">
+<p class="howdy"><span class="dot" aria-hidden="true"></span>Howdy — open to Finance / FP&amp;A / Financial Analyst roles · Syracuse, NY</p>
+<h1 class="giant" aria-label="Yash Singh">
+<span class="row"><span>Yash</span></span>
+<span class="row"><span>Singh</span></span>
+</h1>
+<p class="sub">I turn numbers into <b>decisions leaders trust</b> — financial modeling, forecasting, and BI dashboards across supply chain finance, corporate FP&amp;A, and data analytics. MS in Management Information Systems, Syracuse University.</p>
+<div class="hero-cta">
+<a class="pill dark" href="#work">See the work ↓</a>
+<a class="pill light" href="https://github.com/yashsingh05/" target="_blank" rel="noopener">GitHub</a>
+<a class="pill light" href="https://www.linkedin.com/in/yashsingh02/" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
 </header>
 
 <div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Python</span><em>✦</em><span>SQL</span><em>✦</em><span>Power BI</span><em>✦</em><span>Tableau</span><em>✦</em><span>dbt</span><em>✦</em><span>Apache Spark</span><em>✦</em><span>Looker Studio</span><em>✦</em><span>DuckDB</span><em>✦</em><span>ETL Pipelines</span><em>✦</em>
-    <span>Python</span><em>✦</em><span>SQL</span><em>✦</em><span>Power BI</span><em>✦</em><span>Tableau</span><em>✦</em><span>dbt</span><em>✦</em><span>Apache Spark</span><em>✦</em><span>Looker Studio</span><em>✦</em><span>DuckDB</span><em>✦</em><span>ETL Pipelines</span><em>✦</em>
-  </div>
+<div class="marquee-track">
+<span>Python</span><em>✦</em><span>SQL</span><em>✦</em><span>Power BI</span><em>✦</em><span>Tableau</span><em>✦</em><span>Advanced Excel</span><em>✦</em><span>Financial Modeling</span><em>✦</em><span>FP&amp;A</span><em>✦</em><span>DCF / WACC / IRR</span><em>✦</em><span>dbt</span><em>✦</em><span>Apache Spark</span><em>✦</em><span>Looker Studio</span><em>✦</em><span>DuckDB</span><em>✦</em><span>ETL Pipelines</span><em>✦</em><span>Power Query</span><em>✦</em><span>Variance Analysis</span><em>✦</em><span>Oracle Financials</span><em>✦</em>
+<span>Python</span><em>✦</em><span>SQL</span><em>✦</em><span>Power BI</span><em>✦</em><span>Tableau</span><em>✦</em><span>Advanced Excel</span><em>✦</em><span>Financial Modeling</span><em>✦</em><span>FP&amp;A</span><em>✦</em><span>DCF / WACC / IRR</span><em>✦</em><span>dbt</span><em>✦</em><span>Apache Spark</span><em>✦</em><span>Looker Studio</span><em>✦</em><span>DuckDB</span><em>✦</em><span>ETL Pipelines</span><em>✦</em><span>Power Query</span><em>✦</em><span>Variance Analysis</span><em>✦</em><span>Oracle Financials</span><em>✦</em>
+</div>
 </div>
 
 <section id="work">
-  <div class="wrap">
-    <span class="eyebrow">My latest work</span>
-    <h2>Selected projects</h2>
-    <div class="work-grid">
+<div class="wrap">
+<span class="eyebrow">My latest work</span>
+<h2>Selected projects</h2>
 
-      <article class="work reveal">
-        <div class="work-body">
-          <p class="meta">ELT Pipeline · dbt · Spatial SQL · 2026</p>
-          <h3>Syracuse Winter Operations</h3>
-          <p>Automated pipeline polling Syracuse's live open data daily — 5,017 snow-route segments and 654 snow/ice 311 complaints spatially joined to 32 neighborhoods, modeled in dbt on DuckDB with 10 data-quality tests, surfacing plow-priority disparities in America's snowiest city.</p>
-          <div class="go">
-            <a href="https://syracuse-snow-project-5hhwzlcudtydqkcvz9ajzy.streamlit.app/" target="_blank" rel="noopener">Live dashboard</a>
-            <a href="https://github.com/yashsingh05/syracuse-snow-project" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-      </article>
+<div class="work-grid">
 
-      <article class="work reveal">
-        <div class="work-body">
-          <p class="meta">NLP · Recommendation Engine · Live App</p>
-          <h3>Job Market Intelligence</h3>
-          <p>NLP platform analyzing 20,000+ LinkedIn job postings to extract 50+ tech skills at 89% accuracy, with a recommendation engine matching candidates against 10,000+ roles.</p>
-          <div class="go">
-            <a href="https://job-market-analyzer-jpgmzhdm5ntkjmw8ti5gvg.streamlit.app/" target="_blank" rel="noopener">Live app</a>
-            <a href="https://github.com/yashsingh05/" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-      </article>
+<article class="work reveal">
+<div class="work-body">
+<p class="meta">ELT Pipeline · dbt · Spatial SQL · 2026</p>
+<h3>Syracuse Winter Operations</h3>
+<p>Automated pipeline polling Syracuse's live open data daily — 5,017 snow-route segments and 654 snow/ice 311 complaints spatially joined to 32 neighborhoods, modeled in dbt on DuckDB with 10 data-quality tests, surfacing plow-priority disparities in America's snowiest city.</p>
+<div class="go">
+<a href="https://syracuse-snow-project-5hhwzlcudtydqkcvz9ajzy.streamlit.app/" target="_blank" rel="noopener">Live dashboard</a>
+<a href="https://github.com/yashsingh05/syracuse-snow-project" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</article>
 
-      <article class="work reveal">
-        <div class="work-body">
-          <p class="meta">Web Scraping · ML Clustering · Full-Stack</p>
-          <h3>US Startup &amp; VC Analytics</h3>
-          <p>End-to-end pipelines scraping SEC EDGAR, Y Combinator, ProductHunt, and GitHub; ML clustering and classification across 10,000+ startups; interactive dashboard for startup discovery and VC trend analysis.</p>
-          <div class="go">
-            <a href="https://github.com/yashsingh05/startup-vc-analytics" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-      </article>
+<article class="work reveal">
+<div class="work-body">
+<p class="meta">NLP · Recommendation Engine · Live App</p>
+<h3>Job Market Intelligence</h3>
+<p>NLP platform analyzing 20,000+ LinkedIn job postings to extract 50+ tech skills at 89% accuracy, with a recommendation engine matching candidates against 10,000+ roles.</p>
+<div class="go">
+<a href="https://job-market-analyzer-jpgmzhdm5ntkjmw8ti5gvg.streamlit.app/" target="_blank" rel="noopener">Live app</a>
+<a href="https://github.com/yashsingh05/" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</article>
 
-      <article class="work reveal">
-        <div class="work-body">
-          <p class="meta">Data Visualization · Tableau Public</p>
-          <h3>Tableau Gallery</h3>
-          <p>Interactive dashboards published on Tableau Public — the visualization side of the work, open for anyone to explore and interact with.</p>
-          <div class="go">
-            <a href="https://public.tableau.com/app/profile/yash.singh7577/vizzes" target="_blank" rel="noopener">View dashboards</a>
-          </div>
-        </div>
-      </article>
+<article class="work reveal">
+<div class="work-body">
+<p class="meta">Web Scraping · ML Clustering · Full-Stack</p>
+<h3>US Startup &amp; VC Analytics</h3>
+<p>End-to-end pipelines scraping SEC EDGAR, Y Combinator, ProductHunt, and GitHub; ML clustering and classification across 10,000+ startups; interactive dashboard for startup discovery and VC trend analysis.</p>
+<div class="go">
+<a href="https://github.com/yashsingh05/startup-vc-analytics" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</article>
 
-    </div>
-  </div>
+<article class="work reveal">
+<div class="work-body">
+<p class="meta">Data Visualization · Tableau Public</p>
+<h3>Tableau Gallery</h3>
+<p>Interactive dashboards published on Tableau Public — the visualization side of the work, open for anyone to explore and interact with.</p>
+<div class="go">
+<a href="https://public.tableau.com/app/profile/yash.singh7577/vizzes" target="_blank" rel="noopener">View dashboards</a>
+</div>
+</div>
+</article>
+
+</div>
+</div>
 </section>
 
 <section id="story">
-  <div class="wrap">
-    <span class="eyebrow">Story</span>
-    <h2>Mumbai → Syracuse,<br>7,800 miles for the data.</h2>
-    <div class="story-grid">
-      <div class="reveal">
-        <p>I started in <b>Mumbai</b> — an electronics &amp; telecom engineering degree by day, and my first analyst roles in <b>fintech insurance and real estate</b>, where I learned that a good dashboard can end an argument faster than any meeting.</p>
-        <p>Analyzing <b>20,000 insurance claims with Spark</b> taught me scale. Building <b>ETL pipelines for fragmented property data</b> taught me that most of data work is cleaning up the mess before the insight. I also published research on <b>machine learning for early Alzheimer's detection</b> — the healthcare side of my curiosity.</p>
-        <p>Then I moved to <b>Syracuse, NY</b> for my MS in Information Systems — and America's snowiest city handed me my favorite dataset. If it snows four feet, I want to know whose street gets plowed first. So I built a pipeline that finds out.</p>
-      </div>
-      <div class="reveal">
-        <div class="mile"><span class="yr">2020 – 2024</span><h4>B.E. Electronics &amp; Telecom, Mumbai</h4><p>Engineering foundations · DBMS · Big Data</p></div>
-        <div class="mile"><span class="yr">2022 – 2024</span><h4>Data Analyst · Pyramid Fintech</h4><p>20K claims analyzed with Spark &amp; R · fraud patterns · ARIMA forecasting</p></div>
-        <div class="mile"><span class="yr">2024</span><h4>Data Analyst · Raj Realty Group</h4><p>Power BI dashboards · ETL pipelines feeding pricing models</p></div>
-        <div class="mile"><span class="yr">2024 – 2026</span><h4>MS Information Systems · Syracuse University</h4><p>Business analytics · applied database management · data science</p></div>
-        <div class="mile"><span class="yr">2025</span><h4>Data Analyst Intern · ISSA</h4><p>20+ automated KPI dashboards in Looker Studio for managers &amp; a VP</p></div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<span class="eyebrow">Story</span>
+<h2>Mumbai → Syracuse,<br>7,800 miles for the numbers.</h2>
+
+<div class="story-grid">
+
+<div class="reveal">
+<p>I started in <b>Mumbai</b> — an electronics &amp; telecom engineering degree by day, and my first FP&amp;A role at <b>7FinCrop Group</b>, where I learned that a clean financial model can end an argument faster than any meeting.</p>
+<p>Managing <b>AOP and long-range planning for 4 business units</b> taught me rigor. Presenting <b>DCF, WACC, and scenario analyses to the CFO and COO</b> taught me how to translate numbers into capital allocation decisions worth <b>$12M</b>. Supporting <b>3 M&amp;A due diligence reviews</b> taught me how to stress-test a deal. I also published research on <b>machine learning for early Alzheimer's detection</b> — the healthcare side of my curiosity.</p>
+<p>Then I moved to <b>Syracuse, NY</b> for my MS in Management Information Systems — sharpening the analytics and systems side of finance. That combination landed me at <b>Cardinal Health</b>, where I now analyze <b>$165M+ in operating spend</b>, identify millions in savings, and build the dashboards that keep finance and operations on the same page.</p>
+</div>
+
+<div class="reveal">
+<div class="mile"><span class="yr">2020 – 2024</span><h4>B.E. Electronics &amp; Telecom, Mumbai</h4><p>Engineering foundations · DBMS · Big Data</p></div>
+<div class="mile"><span class="yr">2022 – 2024</span><h4>FP&amp;A Analyst · 7FinCrop Group</h4><p>AOP &amp; LRP for 4 BUs · three-statement modeling · DCF/WACC/IRR · 3 M&amp;A reviews · Oracle Financials</p></div>
+<div class="mile"><span class="yr">2024 – 2026</span><h4>MS Management Information Systems · Syracuse University</h4><p>Business analytics · applied database management · data science</p></div>
+<div class="mile"><span class="yr">2025</span><h4>Data Analyst Intern · ISSA</h4><p>SQL &amp; Python analysis · Power BI / Tableau dashboards · data cleaning &amp; validation</p></div>
+<div class="mile"><span class="yr">2026 – Present</span><h4>Financial Analyst · Cardinal Health</h4><p>$165M+ spend analysis · $3.1M annualized savings · forecast accuracy 91% → 96% · Power BI dashboards</p></div>
+</div>
+
+</div>
+</div>
 </section>
 
 <section id="stack">
-  <div class="wrap">
-    <span class="eyebrow">Stack</span>
-    <h2>What I build with</h2>
-    <div class="stack-groups">
-      <div class="sg reveal"><h4>Languages</h4><p><b>Python · SQL</b> · R · Git/GitHub</p></div>
-      <div class="sg reveal"><h4>Data Engineering</h4><p><b>ETL pipelines · dbt · Apache Spark</b> · DuckDB · Pandas · NumPy · web scraping · warehouse design</p></div>
-      <div class="sg reveal"><h4>BI &amp; Visualization</h4><p><b>Power BI · Tableau · Looker Studio</b> · Excel · Google Analytics · Streamlit · Plotly</p></div>
-      <div class="sg reveal"><h4>Machine Learning</h4><p>Scikit-learn · <b>NLP</b> · time-series (ARIMA, Prophet) · predictive modeling · feature engineering</p></div>
-      <div class="sg reveal"><h4>Databases &amp; Cloud</h4><p>SQL Server · PostgreSQL · MongoDB · <b>Snowflake · BigQuery</b> · Azure · Amazon RDS · Firebase</p></div>
-      <div class="sg reveal"><h4>Research</h4><p>Published: <b>ML approaches for early Alzheimer's detection</b> (review paper) · Arduino-based IoT monitoring</p></div>
-    </div>
-  </div>
+<div class="wrap">
+<span class="eyebrow">Stack</span>
+<h2>What I build with</h2>
+
+<div class="stack-groups">
+
+<div class="sg reveal"><h4>Financial Planning &amp; Analysis</h4><p><b>AOP · Annual Budgeting · Rolling Forecasts</b> · Long-Range Planning · Budget vs. Actuals · Variance Analysis · P&amp;L Analysis · Revenue &amp; OPEX Forecasting · Headcount Planning · CAPEX Planning · Working Capital &amp; Cash Flow Forecasting</p></div>
+
+<div class="sg reveal"><h4>Financial Modeling &amp; Corporate Finance</h4><p><b>Three-Statement Modeling · DCF · WACC · IRR</b> · Scenario &amp; Sensitivity Analysis · Investment Analysis · M&amp;A Due Diligence · Capital Allocation · Liquidity Planning</p></div>
+
+<div class="sg reveal"><h4>Languages</h4><p><b>Python · SQL</b> · R · Git/GitHub · Excel VBA</p></div>
+
+<div class="sg reveal"><h4>Data &amp; BI Tools</h4><p><b>Advanced Excel · Power BI · Tableau · Looker Studio</b> · Power Query · Google Analytics · Streamlit · Plotly</p></div>
+
+<div class="sg reveal"><h4>Data Engineering</h4><p><b>ETL pipelines · dbt · Apache Spark</b> · DuckDB · Pandas · NumPy · web scraping · warehouse design</p></div>
+
+<div class="sg reveal"><h4>Machine Learning</h4><p>Scikit-learn · <b>NLP</b> · time-series (ARIMA, Prophet) · predictive modeling · feature engineering</p></div>
+
+<div class="sg reveal"><h4>Databases, Cloud &amp; Systems</h4><p>SQL Server · PostgreSQL · MongoDB · <b>Snowflake · BigQuery</b> · Azure · Amazon RDS · Firebase · <b>Oracle Financials</b></p></div>
+
+<div class="sg reveal"><h4>Business Partnering</h4><p><b>Supply Chain Finance · Operations Finance</b> · Procurement Analytics · Cost Center Management · Executive Reporting · Board-Level Presentations · Cross-Functional Stakeholder Management</p></div>
+
+<div class="sg reveal"><h4>Research</h4><p>Published: <b>ML approaches for early Alzheimer's detection</b> (review paper) · Arduino-based IoT monitoring</p></div>
+
+</div>
+</div>
 </section>
 
 <section id="connect">
-  <div class="wrap">
-    <p class="tiny reveal">Tap this 'tiny' button to talk data with me =)</p>
-    <a class="mega reveal" href="mailto:yashrajputsingh05@gmail.com">Connect</a>
-    <div class="foot-row">
-      <a href="mailto:yashrajputsingh05@gmail.com">yashrajputsingh05@gmail.com</a>
-      <a href="https://www.linkedin.com/in/yashsingh02/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/yashsingh05/" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://public.tableau.com/app/profile/yash.singh7577/vizzes" target="_blank" rel="noopener">Tableau</a>
-    </div>
-    <p class="fineprint">© 2026 Yash Singh · Designed &amp; built by hand · Syracuse, NY</p>
-  </div>
+<div class="wrap">
+<p class="tiny reveal">Tap this 'tiny' button to talk data with me =)</p>
+<a class="mega reveal" href="mailto:yashrajputsingh05@gmail.com">Connect</a>
+<div class="foot-row">
+<a href="mailto:yashrajputsingh05@gmail.com">yashrajputsingh05@gmail.com</a>
+<a href="https://www.linkedin.com/in/yashsingh02/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://github.com/yashsingh05/" target="_blank" rel="noopener">GitHub</a>
+<a href="https://public.tableau.com/app/profile/yash.singh7577/vizzes" target="_blank" rel="noopener">Tableau</a>
+</div>
+<p class="fineprint">© 2026 Yash Singh · Designed &amp; built by hand · Syracuse, NY</p>
+</div>
 </section>
 
 <script>
 if (!("IntersectionObserver" in window)) {
-  document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
+document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
 } else {
-  const io = new IntersectionObserver(es=>es.forEach(e=>{
-    if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
-  }),{threshold:.12});
-  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+const io = new IntersectionObserver(es=>es.forEach(e=>{
+if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 }
 </script>
+
 </body>
 </html>
